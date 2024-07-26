@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Example</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
-<body>
+<body class="box-border">
     <footer class="bg-[#659f8f] dark:bg-[#313131]">
         <div class="container">
             <footer class="bg-[#659f8f] dark:bg-[#313131]">
-                <div class="container px-6 py-12 mx-auto">
-                    <div class="grid">
+                <div class="container mx-auto px-10 py-20">
+                    <!--Grid-->
+                    <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2 sm:gap-y-12">
                         <div class="sm:col-span-2">
-                            <h1 class="max-w-lg" >Subscribe.</h1>
+                            <h1 class="max-w-lg font-semibold text-xl text-[#313131] mb-8 xl:text-2xl" >Subscribe to our newsletter for updates.</h1>
                             <div class="flex">
-                                <input id="email" type="text">
-                                <button class="w-full px-6 py-2.5 bg-white">
+                                <input id="email" type="text" placeholder="Email Address" class="px-6 py-2 border rounded-md ">
+                                <button class="w-full px- py- bg-white border rounded-md mx-4 text-white bg-yellow-600">
                                     Subscribe
                                 </button>
                             </div>
@@ -47,7 +48,9 @@
                             <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
                         </a>
                     </div>
+                </div>
+            </footer>
+        </div>
     </footer>
-
 </body>
 </html>
